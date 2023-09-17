@@ -60,6 +60,8 @@ h1{
     background-color: aliceblue;
     font-size: 140px;
     user-select: none;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+
     /* border-radius: 15px; */
 
 }
@@ -74,7 +76,8 @@ h1{
 .players{
     margin: 20px;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 100px;
     align-items: center;
 }
 
