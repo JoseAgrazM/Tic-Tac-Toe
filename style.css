@@ -2,7 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(199, 199, 199);
+    
+}
+
+body{
+    background-color: rgb(151, 137, 196);
+    margin: auto 30px;
+
 }
 
 
@@ -12,21 +18,29 @@
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 10px;
-    color: rgb(46, 54, 61);
+    color: rgb(46, 54, 61);    
+}
+
+h1{
+    border-bottom: 4px solid rgb(46, 54, 61);
 }
 
 .container{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
 
-.game{
-    width: 600px;
-    height: 600px;
-    border: 4px solid black;
+
+.game-container{
+    width: 530px;
+    height: 530px;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    box-shadow: 12px 14px 15px rgba(0, 0, 0, 0.4);
     
 }
+
 
 .celdas{
     display: grid;
@@ -34,30 +48,87 @@
     grid-template-rows: repeat(3, 1fr);
     width: 100%;
     height: 100%;
+    cursor: pointer;
+    
 }
 
 .celda{
-    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(0, 0, 0);
     background-color: aliceblue;
-}
+    font-size: 140px;
+    /* border-radius: 15px; */
 
-.celda:hover{
-    background-color: rgba(98, 0, 189, 0.571);
 }
-.celda:active{
-    background-color: rgba(187, 114, 255, 0.507);
+.celda:hover {
+    background-image: radial-gradient(rgb(255, 255, 255),rgb(213, 213, 213));
 }
 
 .players{
     margin: 20px;
-    display: flex;
+    display:flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.player{
-    border: 2px solid blue;
+.player h2{
+    background-color: rgba(125, 125, 254, 0.5);
+    padding: 7px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
+.notification h2{
+    background-color: rgba(125, 213, 254, 0.5);
+    padding: 7px;
+    border-radius: 10px;
+    
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button{
+    width: 140px;
+    height: 50px;
+    margin: 11px;
+    background-color: transparent;
+    font-size: 20px;
+    color: black;
+    border: 3px rgb(0, 0, 0) solid;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.btn button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 3px rgb(0, 0, 0) solid;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.btn button:active{
+    background-color: rgb(83, 83, 83);
+    color: rgb(255, 255, 255);
+    border: 3px rgb(0, 0, 0)solid;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+
+
+/* ---------------figuras------------------ */
+
+
+
+/*---------------WINNER------------------------*/
+
+
 
 
 

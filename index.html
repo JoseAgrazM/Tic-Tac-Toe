@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/style.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/dd83b1d431.js" crossorigin="anonymous"></script>
     <title>Tic-Tac-Toe</title>
 </head>
 <body>
@@ -13,16 +14,23 @@
 
     <section class="players">
         <div class="player player1">
-            <h2>Player1:</h2>
+            <h2 class="name1"></h2>
         </div>
+
+        <div class="player notification">
+            <h2 class="game-notification"></h2>
+        </div>
+
         <div class="player player2">
-            <h2>Player2:</h2>
+            <h2 class="name2"></h2>
         </div>
     </section>
 
     <section class="container">
-        <div class="game">
+
+        <div class="game-container">
             <div class="celdas">
+                <div class="celda celda0"></div>
                 <div class="celda celda1"></div>
                 <div class="celda celda2"></div>
                 <div class="celda celda3"></div>
@@ -31,12 +39,16 @@
                 <div class="celda celda6"></div>
                 <div class="celda celda7"></div>
                 <div class="celda celda8"></div>
-                <div class="celda celda9"></div>
             </div>
-
-            
         </div>
+        
+        <div class="btn">
+            <button class="game-restart">RESTART <i class="fa-solid fa-rotate"></i></button>
+        </div>
+
     </section>
+
+
 
 
 
