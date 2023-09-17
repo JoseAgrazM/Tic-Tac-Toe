@@ -59,10 +59,15 @@ h1{
     border: 2px solid rgb(0, 0, 0);
     background-color: aliceblue;
     font-size: 140px;
+    user-select: none;
     /* border-radius: 15px; */
 
 }
 .celda:hover {
+    background-image: radial-gradient(rgb(255, 255, 255),rgb(179, 179, 179));
+}
+
+.celda:active {
     background-image: radial-gradient(rgb(255, 255, 255),rgb(213, 213, 213));
 }
 
